@@ -52,16 +52,18 @@ if (isset($_POST['submit'])) {
   ?>
   <div id="form">
     <h1>Iniciar sesión</h1>
-    <form action="login.php" name="form" method="POST">
-      <label>Ingrese email</label>
-      <input type="email" id="email" name="email" required value="<?php echo htmlspecialchars($email ?? ''); ?>"><br><br>
-      <label>Ingrese contraseña</label>
-      <input type="password" id="password" name="password" required><br><br>
-      <?php if (!empty($error)): ?>
-        <div class="text-danger"><?php echo $error; ?></div>
-      <?php endif; ?>
-      <input type="submit" id="btn" value="Iniciar sesión" name="submit">
-    </form>
+      <form action="login.php" name="form" method="POST">
+        <label>Ingrese email</label>
+        <input type="email" id="email" name="email" required value="<?php echo htmlspecialchars($email ?? ''); ?>"><br><br>
+        <label>Ingrese contraseña</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <?php if (!empty($error)): ?>
+          <div class="text-danger"><?php echo $error; ?></div>
+        <?php endif; ?>
+        <input type="submit" id="btn" value="Iniciar sesión" name="submit">
+      </form>
+      <a href="forgot-password.php">¿Olvidaste la contraseña?</a>
+
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>

@@ -24,6 +24,7 @@ if (isset($_POST['submit'])) {
       $sql = "INSERT INTO users(email, password, userName, userLastname, userType) VALUES ('$email', '$hash', '$userName', '$userLastname', '$userType')";
       $result = mysqli_query($conn, $sql);
 
+      //toda esta parte de alert hay que cambiarla
       if ($result) {
         echo "<script>alert('Usuario registrado con éxito'); window.location.href = 'index.php';</script>";
       } else {
