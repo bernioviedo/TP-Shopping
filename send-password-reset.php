@@ -1,6 +1,6 @@
 <?php
 
-//Genera el token para el reinicio de contraseña, le pone tiempo de vencimiento y envía el mail al usuario
+//Genera el token para el reinicio de contraseña, le pone tiempo de vencimiento y envia el mail al usuario
 
 $email = $_POST["email"];
 
